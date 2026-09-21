@@ -1,6 +1,7 @@
 package com.amazon.e2e.tests;
 
 import com.amazon.e2e.base.BaseTest;
+import com.amazon.e2e.config.ConfigReader;
 import com.amazon.e2e.data.TestData;
 import com.amazon.e2e.pages.HomePage;
 import com.amazon.e2e.pages.SearchResultsPage;
@@ -18,5 +19,6 @@ public class SearchKeychainTest extends BaseTest {
 
         // Step 3: verify results and capture screenshot
         results.verifyResultsDisplayed().takeScreenshot("keychain-search-results");
+        log.info("START [{}] {}");
     }
 }
